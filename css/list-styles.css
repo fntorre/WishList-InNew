@@ -1,0 +1,1217 @@
+/* BOTON PAGINA DE PRODUCTO  */
+
+.glis-sku-single.glis-sku-default {
+    display: none;
+}
+
+.agregar-lista .giftlist-insertsku-popup, .giftlist-insertsku-must-login {
+    margin-top: 15px;
+    background-color: #f2f2f2;
+}
+
+.agregar-lista .giftlist-insertsku-popup a, .giftlist-insertsku-must-login a {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 14px 10px 14px 50px;
+    font-size: 0px;
+    font-weight: 500;
+    color: red;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/listas04.png);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position-y: 10px;
+    background-position-x: 10px;
+    display: block;
+    width: 135px;
+    margin: auto;
+}
+
+.agregar-lista .giftlist-insertsku-popup a:before, .giftlist-insertsku-must-login a:before {
+    content: "Mis Listas";
+    font-size: 15px;
+}
+
+/* FIN PAGINA PRODUCTO     */
+
+/* MODAL */
+
+#TB_overlay {
+    background-color: #00000042;
+}
+
+#TB_window {
+    background-color: white;
+    padding: 20px;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/listas04.png);
+    background-repeat: no-repeat;
+    background-position-x: 35px;
+    background-position-y: 15px;
+    box-shadow: 0px 5px 6px 1px #22222252;
+}
+
+#TB_window .glis-title:before {
+    font-size: 20px;
+    content: "Mis Listas";
+    font-weight: 500;
+    color: red;
+    margin-top: -32px;
+    margin-left: 40px;
+    float: left;
+}
+
+#TB_window #TB_ajaxContent {
+    height: auto !important;
+    overflow: initial !important;
+}
+
+#TB_window #TB_closeWindowButton {
+    font-size: 0;
+}
+
+#TB_window #TB_closeWindowButton:before {
+    content: "X";
+    font-size: 16px;
+    border: 3px solid;
+    padding: 5px 11px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-top: -35px;
+    box-shadow: 3px 2px 2px 2px #0000002b;
+}
+
+#TB_window .glis-title {
+    font-size: 0;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 1px solid #00000036;
+}
+
+#TB_window .glis-title:before {
+    font-size: 20px;
+    content: "Mis Listas";
+    font-weight: 500;
+    color: red;
+    display: block;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+#TB_window .glis-selected {
+    background-color: #ff0000;
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 18px;
+    bottom: 10px;
+    right: 25px;
+    font-size: 0;
+    position: absolute;
+}
+
+.glis-selected.inactive {
+    cursor: default;
+    pointer-events: none;
+    opacity: 20%;
+}
+
+#TB_window .glis-selected:before {
+    font-size: 13px;
+    content: "Compartir Listas";
+    cursor: pointer;
+}
+
+#TB_window .glis-save ul {
+    list-style: none;
+    padding: 0;
+}
+
+#TB_window .glis-existing-title {
+    font-size: 0;
+}
+
+.glis-mylist.mode-list {
+    margin-top: 30px;
+}
+
+.glis-existing-title li {
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.glis-existing-title li:nth-child(1) {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/lista-icono-1.png);
+    background-repeat: no-repeat;
+}
+
+.glis-existing-title li:nth-child(2) {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/lista-icono-2.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-y: 3px;
+}
+
+.glis-existing-title li:nth-child(3) {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/lista-icono-3.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-y: 3px;
+}
+
+.glis-existing-title {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    float: right;
+    width: 150px;
+    justify-content: space-between;
+}
+
+#TB_window .glis-ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: -15px;
+}
+
+#TB_window .glis-ul .glis-li {
+    font-size: 20px;
+    color: red;
+    box-shadow: 0px 5px 10px #00000025;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+/* #actions {
+        margin-top: -30px;
+    } */
+
+/*     #TB_window .glis-ul .glis-li a {
+        color: red;
+        font-size: 0;
+        font-weight: 500;
+    }
+
+    #TB_window .glis-ul .glis-li a:before {
+        content: "+";
+        font-size: 20px;
+        margin-top: -35px;
+        margin-left: -40px;
+        float: left;
+        border: 2px solid;
+        padding: 3px 10px;
+        border-radius: 25px;
+    } */
+
+#TB_window .glis-save-inserted {
+    display: none;
+}
+
+#TB_window .glis-li {
+    padding: 10px 0;
+}
+
+#agregar {
+    font-size: 20px;
+    float: left;
+    margin-right: 15px;
+    color: red;
+    cursor: pointer;
+}
+
+#actions .compartir {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/lista-icono-2.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-y: 3px;
+    opacity: 40%;
+}
+
+#actions .compartir:hover {
+    opacity: 100%;
+}
+
+/* FIN MODAL */
+
+/* CREAR NUEVA LISTA */
+
+ul.glis-create-form {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.glis-create-form-type, li.giftlisttype.chose, .therms-area h2 {
+    display: none;
+}
+
+.glis-submit.glis-submit-new:before {
+    content: "Crear nueva lista y agregar producto";
+    font-size: 12px;
+}
+
+.glis-new-info {
+    display: none !important;
+}
+
+.glis-new-title {
+    font-size: 1.4em;
+    display: block;
+    margin-top: 10px;
+}
+
+li.visibility {
+    margin-top: 20px;
+}
+
+/* PAGINA DE LISTAS */
+
+h3.giftlistinfo-title, li.owner.gender-unknown, .giftlistinfo-actions .admin-only.action-edit, .giftlistinfo-actions .admin-only.action-view, th.glstat-table-title {
+    display: none;
+}
+
+#giftliststatistics {
+    padding-left: 10px;
+    background-color: #f5f5f587;
+}
+
+#giftliststatistics th.glstat-table-itens, #giftliststatistics th.glstat-table-purchased {
+    border: none;
+}
+
+.giftlistinfo-description {
+    font-size: 1.75em;
+    display: block;
+    margin-top: -13px;
+    margin-bottom: -25px;
+}
+
+.giftlistinfo-actions {
+    position: fixed;
+    bottom: -10px;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0px -2px 5px 2px #00000026;
+}
+
+.giftlistinfo-actions .list-action {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #2a9d8f;
+    text-align: center;
+    font-weight: 500;
+    font-size: 11px;
+    align-items: center;
+}
+
+.list-action .admin-only.action-manage {
+    display: none;
+}
+
+.giftlistinfo-actions .list-action .action-buy {
+    background-color: red;
+    padding: 12px;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/shop-list-1.png);
+    background-repeat: no-repeat;
+    background-position-y: 17px;
+    background-position-x: 93%;
+    padding-right: 30px;
+}
+
+.giftlistinfo-actions #sendtocart-6.buy-button.send-to-cart {
+    font-size: 0;
+}
+
+.giftlistinfo-actions #sendtocart-6.buy-button.send-to-cart:before {
+    font-size: 13.3px;
+    content: "Comprar todos los Productos";
+}
+
+.giftlistinfo-actions .list-action .action-buy a {
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: block;
+}
+
+.giftlistinfo-actions .action-share a {
+    color: white;
+    padding-right: 40px;
+}
+
+.giftlistinfo-actions .list-action .action-share {
+    padding: 12px;
+    font-size: 1.2em;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/share-list-2.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 12px;
+    padding-left: 40px;
+}
+
+.giftlistproductsv2 a.inputedit.edit {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.giftlistsku-input-wishedamt {
+    width: 30px;
+    display: block;
+    margin-top: 15px;
+}
+
+.giftlistproductsv2 td.price {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.giftlistproductsv2 td.name {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.giftlistproductsv2 a.deletethissku {
+    font-size: 0;
+}
+
+.giftlistproductsv2 a.deletethissku:before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/trash-icon-2.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    display: block;
+    padding: 22px;
+    border-radius: 25px;
+}
+
+.giftlistproductsv2 td.image img {
+    width: 120px;
+    height: auto;
+}
+
+table.giftlistproductsv2 tr th:nth-child(1), table.giftlistproductsv2 tr th:nth-child(2), table.giftlistproductsv2 tr th:nth-child(4), table.giftlistproductsv2 tr th:nth-child(5) {
+    font-size: 0;
+}
+
+table.giftlistproductsv2 tr th:nth-child(1):before {
+    content: "Producto";
+    font-size: 12px;
+}
+
+table.giftlistproductsv2 tr th:nth-child(4):before {
+    content: "Cantidad";
+    font-size: 12px;
+}
+
+table.giftlistproductsv2 tr th:nth-child(5):before {
+    content: "Eliminar";
+    font-size: 12px;
+}
+
+input.checkuncheckall {
+    width: 20px;
+    height: 20px;
+}
+
+input.checkuncheckthis {
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+}
+
+p.giftlist-remove-sku {
+    float: right;
+}
+
+.inputedit.save {
+    font-size: 0;
+}
+
+.inputedit.save:before {
+    font-size: 11px;
+    content: "GUARDAR";
+    color: green;
+    font-weight: bold;
+}
+
+.giftlistproductsv2-loading {
+    font-size: 0;
+}
+
+.giftlistproductsv2-loading:before {
+    font-size: 15px;
+    content: "Cargando Productos";
+    padding: 15px;
+    margin-top: 20px;
+    display: block;
+    background-color: #2cb02e73;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+/* menu listas */
+
+.cont-submenu {
+    float: right;
+    margin-bottom: -90px;
+}
+
+button.onsub {
+    width: 40px;
+    height: 40px;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/menu--icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.menu-listas {
+    text-align: right;
+    padding: 20px;
+    box-shadow: 0px 2px 3px 1px #00000026;
+    width: 170px;
+    background-color: #333;
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: all .4s ease-in-out;
+    position: absolute;
+    z-index: 9999;
+}
+
+.menu-listas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-listas li {
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.menu-listas .create {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/add-list.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 100%;
+    padding-right: 30px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.menu-listas .edit {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/edit-list.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 100%;
+    background-position-y: 15%;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.menu-listas a {
+    color: #cecece;
+}
+
+.menu-listas.in {
+    opacity: 100;
+    transform: translateY(0%);
+}
+
+button.onsub {
+    width: 40px;
+    height: 40px;
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/menu-icon-list-2.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center;
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+
+button.onsub.in:active, button.onsub:active {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/menu--icon.png);
+}
+
+.menu-listas.in .active {
+    opacity: 30%;
+    pointer-events: none;
+}
+
+h2.glsearch-title {
+    display: none;
+}
+
+h2.titulo-sessao {
+    font-size: 1.9em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.glmanager-type h2 {
+    font-size: 1.5em;
+}
+
+.glmanager-actions {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.glmanager-actions li {
+    text-align: center;
+    margin: 1px;
+    background-color: #ddd;
+    padding: 4px 7px;
+    font-weight: bold;
+}
+
+.glmanager-actions .action-view {
+    display: none;
+}
+
+.glmanager-actions .action-share {
+    display: none;
+}
+
+.glmanager-actions .action-manage {
+    font-size: 0;
+}
+
+.glmanager-actions .action-manage a:before {
+    font-size: 12px;
+    content: "Ver Lista";
+}
+
+.giftlist-body-name a {
+    color: red;
+    font-size: 1.5em;
+    width: 100px;
+    display: block;
+    pointer-events: none;
+}
+
+.giftlist-body-name {
+    padding-left: 20px;
+}
+
+/* EDITAR LISTA */
+
+div#giftlistformwrapper {
+    width: 50%;
+}
+
+form#giftlistform {
+    font-size: 1.15em;
+}
+
+.obr {
+    display: none;
+}
+
+ul.giftlistul {
+    list-style: none;
+    padding: 0;
+}
+
+li.giftlisttype.fixed {
+    display: none;
+}
+
+li.giftlistname label, li.giftlisturl label, .giftlistownerdocument label {
+    display: block;
+}
+
+input#giftlistname, input#giftlisturl-readonly, input#giftlistownerdocument {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+span#visibility-wrapper {
+    display: flex;
+}
+
+input#giftlistispublic-no, #giftlistispublic-no label {
+    margin-right: 10px;
+}
+
+input#giftlistispublic-no, #giftlistispublic-no label {
+    margin-right: 10px;
+}
+
+li.visibility label {
+    display: block;
+    margin-right: 15px;
+}
+
+input#giftlistispublic-yes {
+    margin-right: 10px;
+}
+
+#giftlistimageupload {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+input#giftlistupload {
+    background-color: red;
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+
+li.giftlistmessage label {
+    display: block;
+}
+
+textarea#giftlistmessage {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+ul.form-action {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.form-action .cancel, .form-action .save {
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+input#giftlistv2cancel {
+    background-color: #CCC;
+    color: white;
+    width: 100%;
+}
+
+input#giftlistv2save {
+    background-color: red;
+    color: white;
+    width: 100%;
+}
+
+/* LISTAS VITRINA */
+
+.flag.ofertas {
+    position: absolute;
+    background-color: red;
+    padding: 2px 5px;
+    color: white;
+}
+
+/* COMPARTIR */
+
+#refer-a-friend-form-gift-list #div-title {
+    display: none;
+}
+
+#refer-a-friend-form-gift-list #fldYourData, #refer-a-friend-form-gift-list #grp-amigo-indicar {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#refer-a-friend-form-gift-list #legFriendsData, #refer-a-friend-form-gift-list #legYourData, #refer-a-friend-form-gift-list #legMessage {
+    margin-bottom: 5px;
+}
+
+#refer-a-friend-form-gift-list #legMessage {
+    margin-bottom: 5px;
+}
+
+#refer-a-friend-form-gift-list #div-yourName, #refer-a-friend-form-gift-list #divNomeAmigo {
+    width: 49%;
+    margin-right: 1%;
+}
+
+#refer-a-friend-form-gift-list input#txtSeuNome, #refer-a-friend-form-gift-list input#txtSeuEmail, #refer-a-friend-form-gift-list input#txtNomeAmigo, #refer-a-friend-form-gift-list input#txtEmailAmigo {
+    display: block;
+    width: 100%;
+}
+
+#refer-a-friend-form-gift-list #div-yourEmail, #refer-a-friend-form-gift-list #divEmailAmigo {
+    width: 49%;
+    margin-left: 1%;
+}
+
+#refer-a-friend-form-gift-list textarea#txtMensagem {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 80px;
+}
+
+#refer-a-friend-form-gift-list #fldMessage {
+    margin-top: 15px;
+}
+
+.giftlistinfo-link {
+    display: none;
+}
+
+th.giftlist-header-desired, th.giftlist-header-name {
+    font-size: 0;
+}
+
+th.giftlist-header-desired:before {
+    font-size: 12px;
+    content: "Deseados";
+}
+
+th.giftlist-header-name:before {
+    font-size: 12px;
+    content: "Nombre";
+}
+
+input#btnAdicionarAmigos, input#btnEnviar, input#btnReferMoreFriends {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 7px;
+    font-weight: 600;
+}
+
+input#btnReferMoreFriends {
+    margin-right: 10px;
+}
+
+input#btnCancelar, input#btnFechar {
+    background-color: #ccc;
+    border: none;
+    color: #666;
+    padding: 7px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    #refer-a-friend-form-gift-list #fldYourData, #refer-a-friend-form-gift-list #grp-amigo-indicar {
+        display: block;
+    }
+    #refer-a-friend-form-gift-list #div-yourEmail, #refer-a-friend-form-gift-list #divEmailAmigo, #refer-a-friend-form-gift-list #div-yourName, #refer-a-friend-form-gift-list #divNomeAmigo {
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #refer-a-friend-form-gift-list textarea#txtMensagem {
+        width: 50%;
+    }
+    .giftlistinfo-actions {
+        width: 100%;
+    }
+    #TB_window {
+        width: 100% !important;
+        margin-left: 0px !important;
+        left: 0% !important;
+    }
+    v#TB_ajaxContent {
+        width: auto !important;
+    }
+    #TB_window #TB_closeWindowButton:before {
+        margin-top: -15px;
+        right: 0px;
+        margin-right: 20px;
+    }
+    #sns_wrapper h2 {
+        font-size: 2.2em;
+        line-height: 1.5;
+    }
+    #sns_wrapper .glmanager-type h2 {
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+    .inputedit.save:before {
+        margin-top: -19px;
+        float: left;
+        margin-left: 35px;
+    }
+    .cont-submenu {
+        margin-top: -50px;
+    }
+    #giftliststatistics, .giftlistproductsv2 thead, .giftlistproductsv2 td.purchased {
+        display: none;
+    }
+    .giftlistproductsv2 tr {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 35% 50% 15%;
+        margin-bottom: 18px;
+        margin-top: 12px;
+        box-shadow: 0px 2px 3px 1px #00000026;
+        border-radius: 10px;
+    }
+    .giftlistproductsv2 :nth-of-type(5) {
+        grid-column: 2;
+    }
+    .giftlistproductsv2 :nth-of-type(3) {
+        grid-column: 2;
+    }
+    .giftlistproductsv2 :nth-of-type(4) {
+        grid-column: 1;
+    }
+    .giftlistproductsv2 td.name {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        height: 70px;
+        padding-right: 25px;
+        font-size: 1.2em;
+        width: 220px;
+    }
+    .giftlistproductsv2 .giftlistsku-input-wishedamt {
+        width: 30px;
+    }
+    .giftlistproductsv2 a.inputedit.edit {
+        padding: 0;
+        margin-top: 0px;
+        color: black;
+        background-color: transparent;
+        float: left;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 35px;
+        margin-top: -23px;
+    }
+    .giftlistproductsv2 a.inputedit.edit:after {
+        content: "CANTIDAD";
+        display: block;
+        line-height: 1;
+    }
+    .giftlistproductsv2 a.deletethissku:before {
+        font-size: 12px;
+    }
+    td.price:before {
+        display: block;
+        font-size: 0.7em;
+    }
+    .giftlistproductsv2 a.deletethissku:before {
+        margin-top: 2px;
+        margin-left: -35px;
+        border: none;
+    }
+    .giftlistproductsv2 td.price {
+        font-size: 1.4em;
+        margin-top: -20px;
+    }
+    .giftlistproductsv2 td {
+        border-top: none;
+        padding-bottom: 0px;
+    }
+    td.checkuncheck {
+        margin-top: -60px;
+    }
+    input.checkuncheckthis {
+        height: 20px;
+        width: 20px;
+        margin-top: 3px;
+        margin-left: 20px;
+    }
+    ul.nav.nav-list.bs-docs-sidenav.giftlist-sidenav {
+        background-color: #80808014;
+        display: grid;
+        grid-template-columns: 1fr 11fr 11fr 11fr 1fr;
+    }
+    .giftlist-sidenav li {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.1;
+        border-bottom: none;
+    }
+    .giftlist-body-name a {
+        width: none;
+    }
+    div#giftlistformwrapper {
+        width: 100%;
+    }
+    .share-morales {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .giftlistinfo-actions {
+        width: 50%;
+    }
+    .giftlistinfo-actions .list-action .action-buy {
+        background-position-y: 10px;
+    }
+}
+
+.prod-agr {
+    position: absolute;
+    top: 30%;
+    background-color: aquamarine;
+    left: 30%;
+    height: 30vh;
+    width: 40%;
+    z-index: 20;
+    display: none;
+}
+
+.prod-agr.show {
+    display: block;
+}
+
+.glis-save {
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    color: white;
+    z-index: 9999;
+    margin-left: -35px;
+    text-align: center;
+    padding-top: 25%;
+    border-bottom: solid 4px red;
+}
+
+.glis-edit-link {
+    color: #333;
+    font-size: 0;
+    position: absolute;
+    top: 60px;
+    margin: auto;
+    left: 100px;
+}
+
+.glis-edit-link:before {
+    content: "Â¡Producto agregado exitosamente a la lista!";
+    font-size: 20px;
+}
+
+.glis-edit-link:after {
+    content: "Haga click para ver la lista.";
+    font-size: 15px;
+    color: red;
+    display: block;
+}
+
+/* FIN PAGINA DE LISTAS */
+
+/* COMPARTIR LISTA  */
+
+.linkList {
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.share-morales {
+    position: fixed;
+    z-index: 10003;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-left: -315px;
+    width: 630px;
+    margin-top: -220px;
+    background-color: white;
+    padding: 75px 25px;
+    box-shadow: 0px 3px 10px #0000004d;
+    text-align: center;
+    height: 330px;
+    border: solid red;
+}
+
+.share-morales__contenedor {
+    max-width: 70%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.share-morales__contenedor img {
+    max-width: 80px;
+}
+
+#share__whatssap, #share__messenger, #share__mail {
+    cursor: pointer;
+}
+
+.share-morales__tittle {
+    font-size: 2em;
+    color: red;
+}
+
+.share-morales__subtittle {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.compartir {
+    background-image: url(https://moralesltda.vteximg.com.br/arquivos/lista-icono-2.png);
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.close-shareModal {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 6px 11px;
+    position: absolute;
+    right: -12px;
+    top: -11px;
+    border: solid white 3px;
+    cursor: pointer;
+}
+
+#nuevaLista {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 20px;
+    color: black;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+/* 
+VARIAS LISTAS REFACTOR */
+
+li.glis-li a {
+    color: red;
+}
+
+ul.glis-create-form {
+    display: none;
+}
+
+ul.glis-create-form.show {
+    display: block;
+}
+
+.glis-new-title {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.glis-new-title:before {
+    content: "+";
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 2px 9px;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#actions {
+    margin-top: -30px;
+    margin-left: 95%;
+}
+
+label.create, span.glis-form-name-obr {
+    display: none;
+}
+
+ul.glis-create-form.show {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 15px #00000025;
+    padding: 20px;
+    border-bottom: 5px solid red;
+    background-color: black;
+    margin-top: -12px;
+}
+
+li.glis-create-form-name {
+    width: 49%;
+}
+
+.glis-form-name {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+li.glis-create-form-submit {
+    width: 49%;
+}
+
+.glis-submit.glis-submit-new {
+    font-size: 0;
+    color: white;
+    background-color: red;
+    display: inline-block;
+    padding: 6px 15px;
+    font-weight: bold;
+    height: 30px;
+}
+
+li.glis-li a:before {
+    content: "+";
+    margin-right: 10px;
+    border: 2px solid;
+    padding: 1px 8px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .close-shareModal {
+        right: 25%;
+    }
+    ul.glis-create-form.show {
+        display: block !important;
+    }
+    li.glis-create-form-name {
+        width: 57%;
+        margin-bottom: 5px;
+    }
+    li.glis-create-form-submit {
+        width: 100%;
+    }
+    #actions {
+        margin-left: 50%;
+    }
+}
+
+td.giftlist-body-member {
+    display: none;
+}
+
+th.giftlist-header-member {
+    display: none;
+}
